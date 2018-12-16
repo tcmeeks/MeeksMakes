@@ -10,8 +10,9 @@ h1 {
 
 .profile-pic {
     width: 240px;
-    height: auto;
+    height: 240px;
     padding-top: 12px;
+    margin-right: 60px;
 }
 
 .spacer {

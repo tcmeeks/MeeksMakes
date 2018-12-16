@@ -6,26 +6,50 @@
 
   <div class="spacer"></div>
 
-  <div class="">
+  <div (mouseenter)="hoverA=true;" (mouseleave)="hoverA=false;">
     <div class="strip background-red"></div>
-    <h5>Here is a recent photo of me.</h5>
-    <img src="../../../assets/images/profile_new.jpg" class="rounded-circle profile-pic">
+    <h5 *ngIf="!hoverA">Here is a recent photo of me.</h5>
+    <h5 *ngIf="hoverA">Here is a recent photo of me... and some others of me doing fun stuff.</h5>
+    <div class="row">
+      <img src="../../../assets/images/profile_new.jpg" class="rounded-circle profile-pic">
+      <div *ngIf="hoverA">
+        <img src="../../../assets/images/me_2.jpeg" class="rounded-circle profile-pic">
+        <img src="../../../assets/images/me_3.jpg" class="rounded-circle profile-pic">
+      </div>
+    </div>
   </div>
 
   <div class="spacer"></div>
 
-  <div class="">
+  <div (mouseenter)="hoverB=true;" (mouseleave)="hoverB=false;">
     <div class="strip background-green"></div>
-    <h5>Here is a stock photo of some code.</h5>
-    <img src="../../../assets/images/code.png" class="rounded-circle profile-pic">
+    <h5 *ngIf="!hoverB">Here is a stock photo of some code.</h5>
+    <h5 *ngIf="hoverB">Here is a stock photo of some code... and a stock photo of a programmer for good measure.</h5>
+    <div class="row">
+      <img src="../../../assets/images/code.png" class="rounded-circle profile-pic">
+      <div *ngIf="hoverB">
+        <img src="../../../assets/images/programmer.png" class="rounded-circle profile-pic">
+      </div>
+    </div>
   </div>
 
   <div class="spacer"></div>
 
-  <div class="">
+  <div (mouseenter)="hoverC=true;" (mouseleave)="hoverC=false;">
     <div class="strip background-red"></div>
-    <h5>Here is a photo of Zoë, Freddie, and Luther.</h5>
-    <img src="../../../assets/images/pets.jpg" class="rounded-circle profile-pic">
+    <h5 *ngIf="!hoverC">Here is a photo of Zoë, Freddie, and Luther.</h5>
+    <h5 *ngIf="hoverC">Here are way too many photos of Zoë, Freddie, and Luther.</h5>
+    <div class="row">
+      <img src="../../../assets/images/pets.jpg" class="rounded-circle profile-pic">
+      <div *ngIf="hoverC">
+        <img src="../../../assets/images/pets_1.JPG" class="rounded-circle profile-pic">
+        <img src="../../../assets/images/pets_2.jpeg" class="rounded-circle profile-pic">
+        <img src="../../../assets/images/pets_3.JPG" class="rounded-circle profile-pic">
+        <img src="../../../assets/images/pets_4.JPG" class="rounded-circle profile-pic">
+        <img src="../../../assets/images/pets_5.JPG" class="rounded-circle profile-pic">
+        <img src="../../../assets/images/pets_6.JPG" class="rounded-circle profile-pic">
+      </div>
+    </div>
   </div>
 
 </div>
