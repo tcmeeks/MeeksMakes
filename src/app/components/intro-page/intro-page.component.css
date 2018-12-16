@@ -1,20 +1,26 @@
 h5 {
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
 h1 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size:  100px;
-    font-weight: bold;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
 }
 
 .profile-pic {
-    width: 240px;
-    height: 240px;
-    padding-top: 12px;
-    margin-right: 60px;
+  width: 240px;
+  height: 240px;
+  padding-top: 12px;
+  margin-right: 60px;
+}
+
+.photo-row {
+  overflow-x: hidden;
+  white-space: nowrap;
+  flex-wrap: nowrap;
 }
 
 .spacer {
-    height: 80px;
+  height: 80px;
 }

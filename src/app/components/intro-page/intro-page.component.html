@@ -1,5 +1,7 @@
 <div class="container-fluid">
 
+
+  <!-- TODO: Use hover https://github.com/IanLunn/Hover -->
   <h5>You've reached the website of</h5>
   <h1 id="bigTaylor">Taylor Meeks.</h1>
   <h5>I make things on the internet.</h5>
@@ -10,7 +12,7 @@
     <div class="strip background-red"></div>
     <h5 *ngIf="!hoverA">Here is a recent photo of me.</h5>
     <h5 *ngIf="hoverA">Here is a recent photo of me... and some others of me doing fun stuff.</h5>
-    <div class="row">
+    <div class="row photo-row">
       <img src="../../../assets/images/profile_new.jpg" class="rounded-circle profile-pic">
       <div *ngIf="hoverA">
         <img src="../../../assets/images/me_2.jpeg" class="rounded-circle profile-pic">
@@ -20,12 +22,18 @@
   </div>
 
   <div class="spacer"></div>
+  <p>I've got a passion for desinging and creating <b>fun</b>, <b>usable</b> websites. I've been exploring tools like
+    <b>Angular</b>, <b>Bootstrap</b>, <b>Kendo</b>, and <b>Balsamiq</b>,<br>
+    but I'm always excited to learn and experiment with something new.</p>
+  <p>I thrive in collaborative, agile environments. <a href="mailto: taylormeeks@gmail.com">Contact me</a> and lets
+    make something cool.</p>
+  <div class="spacer"></div>
 
   <div (mouseenter)="hoverB=true;" (mouseleave)="hoverB=false;">
     <div class="strip background-green"></div>
     <h5 *ngIf="!hoverB">Here is a stock photo of some code.</h5>
     <h5 *ngIf="hoverB">Here is a stock photo of some code... and a stock photo of a programmer for good measure.</h5>
-    <div class="row">
+    <div class="row photo-row">
       <img src="../../../assets/images/code.png" class="rounded-circle profile-pic">
       <div *ngIf="hoverB">
         <img src="../../../assets/images/programmer.png" class="rounded-circle profile-pic">
@@ -39,7 +47,7 @@
     <div class="strip background-red"></div>
     <h5 *ngIf="!hoverC">Here is a photo of Zoë, Freddie, and Luther.</h5>
     <h5 *ngIf="hoverC">Here are way too many photos of Zoë, Freddie, and Luther.</h5>
-    <div class="row">
+    <div class="row photo-row">
       <img src="../../../assets/images/pets.jpg" class="rounded-circle profile-pic">
       <div *ngIf="hoverC">
         <img src="../../../assets/images/pets_1.JPG" class="rounded-circle profile-pic">
