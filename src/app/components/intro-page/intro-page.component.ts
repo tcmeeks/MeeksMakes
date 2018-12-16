@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroPageComponent implements OnInit {
 
+  hoverA = false;
+  hoverB = false;
+  hoverC = false;
+  hoverName = false;
+
   constructor() { }
 
   ngOnInit() {
