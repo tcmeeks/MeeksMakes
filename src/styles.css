@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #f2f2f2;
+}
+
+.background-red {
+  background-color: #B7695C;
+}
+
+.background-yellow {
+  background-color: #CDBB79;
+}
+
+.background-green {
+  background-color: #51A39D;
+}
+
+.background-purple {
+  background-color: #814374;
+}
+
+.background-blue {
+    background-color: #06425C;
+  }
+
+.strip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 320px;
+  margin-top: -14px;
+  z-index: -2;
+}

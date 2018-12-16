@@ -1,0 +1,19 @@
+h5 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size:  100px;
+    font-weight: bold;
+}
+
+.profile-pic {
+    width: 240px;
+    height: auto;
+    padding-top: 12px;
+}
+
+.spacer {
+    height: 80px;
+}
